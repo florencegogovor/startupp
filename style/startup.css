@@ -211,6 +211,10 @@ Header
 .section-center {
   text-align: center;
 }
+.section-style {
+  display: flex;
+  justify-content: center;
+}
 .section-info {
   font-size: 0.7rem;
   padding-bottom: 1rem;
