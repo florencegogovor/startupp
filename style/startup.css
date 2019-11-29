@@ -36,7 +36,7 @@ h3 {
 h1 {
   font-size: 2rem;
 }
-img::not logo {
+img {
   width: 100%;
   display: block;
 }
@@ -308,3 +308,79 @@ Header
 }
 
 /* ********** End Services section************* */
+/* ********** features section************* */
+.features {
+  margin-top: 1rem;
+  padding: 1.5rem 3rem;
+  background: var(--darkGrey);
+  color: var(--mainWhite);
+  position: relative;
+}
+.feature-section-icon {
+  position: absolute;
+  top: -3.4%;
+  left: 50%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--primaryColor);
+  z-index: 2;
+  transform: rotateZ(-45deg);
+}
+.feature-section-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.section-white {
+  display: flex;
+  justify-content: center;
+}
+.features p {
+  color: var(--lightGrey);
+}
+.feature-info {
+  font-size: 0.7rem;
+  padding: 0.8rem 0;
+}
+.feature-icon {
+  color: var(--primaryColor);
+  font-size: 1.5rem;
+}
+.feature-title {
+  font-size: 0.9rem;
+  padding-top: 0.7rem;
+}
+.feature-img {
+  display: none;
+}
+/**** Media query*****/
+@media screen and (min-width: 768px) {
+  .features-articles {
+    max-width: 1170px;
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 1rem;
+  }
+  .feature-img {
+    display: block;
+  }
+  .feature-img,
+  .all-features {
+    width: 40%;
+  }
+  .single-feature {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+  }
+  .feature-icon {
+    width: 50px;
+    padding: 0.8rem 2rem 0 0;
+  }
+  .feature-show {
+    text-align: left;
+  }
+}
+. /* ********** End features section************* */ ;;
