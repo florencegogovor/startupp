@@ -119,11 +119,14 @@ Header
 }
 /* ********** End Main Header************* */
 /* ********** Navbar************* */
-.container {
-  padding: 1rem;
+.navbar {
+  /* padding: 1rem; */
   display: block;
   text-align: center;
   /* max-width: 1170px; */
+}
+.logo-box {
+  padding: 1.5rem;
 }
 .logo {
   width: 50px;
@@ -131,26 +134,32 @@ Header
   border-radius: 50%;
   border: 1px solid var(--primaryColor);
   margin: 0 auto;
-  padding-bottom: 0.5rem;
+  padding: 0.2rem;
 }
-.navbar {
+.white {
+  color: var(--mainWhite);
+}
+.nav-links {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
 }
 .link {
-  padding: 0.5rem 1rem;
+  padding: 0.4rem 1rem;
   transition: var(--mainTransition);
   text-transform: capitalize;
+  line-height: 3rem;
 }
-.navbar a:hover {
+.link:hover {
   background: var(--primaryColor);
   color: var(--mainWhite);
-  padding: 0.3rem 0.5rem;
   border-radius: 5px;
 }
 .search {
   color: var(--primaryColor);
+  padding-left: 1rem;
+  cursor: pointer;
 }
 /* **********Media query************* */
 @media screen and (min-width: 768px) {
@@ -189,14 +198,22 @@ Header
   }
 
   .header-center,
-  .container {
+  .navbar {
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
   }
-  .container {
+  .navbar {
     display: flex;
     justify-content: space-between;
+  }
+  .logo-box,
+  .search {
+    padding: 0;
+  }
+  .logo-box,
+  .search {
+    margin: 2rem;
   }
 }
 
@@ -386,7 +403,7 @@ Header
 /* ********** End features section************* */
 /* **********  skills section************* */
 .skills {
-  padding: 3rem;
+  padding: 3rem 2rem;
   max-width: 1170px;
   margin: 0 auto;
 }
@@ -443,7 +460,6 @@ Header
     content: " ";
     background: var(--primaryColor);
     width: 26px;
-    height: 15px;
     position: absolute;
     top: 100%;
     left: 0;
@@ -451,3 +467,50 @@ Header
   }
 }
 /* ********** End skills section************* */
+/* ********** Powerful-skills section************* */
+/* .powerful-skill {
+  background: var(--darkGrey);
+  position: relative;
+  margin-top: 2rem;
+  padding-top: 2rem;
+} */
+/* ********** End Powerful-skills section************* */
+/* ********** Portfolio section************* */
+.section-center {
+  position: relative;
+}
+.all-works {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+
+  /* grid-auto-rows: 200px; */
+}
+.single-work {
+  position: relative;
+  /* cursor: pointer; */
+  /* position: relative; */
+}
+.image-container {
+  background: var(--primaryColor);
+}
+.folio-info {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  /* transform: translateX(-50%); */
+  /* height: 100%;
+  text-align: center;
+  padding: 5rem; */
+  opacity: 0;
+}
+.folio-icons {
+  display: flex;
+}
+.image-container:hover .img {
+  opacity: 0.3;
+}
+.single-work.folio-info {
+  opacity: 1;
+}
+/* ********** End Portfolio section************* */
