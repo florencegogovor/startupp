@@ -337,7 +337,7 @@ Header
   position: absolute;
   top: -3.4%;
   left: 50%;
-  transform: translateY(-50%);
+  transform: translateX(-50%);
   width: 40px;
   height: 40px;
   background: var(--primaryColor);
@@ -381,7 +381,8 @@ Header
     padding: 3rem 1rem;
   }
   .feature-img {
-    display: block;
+    display: flex;
+    align-items: stretch;
   }
   .feature-img,
   .all-features {
@@ -532,8 +533,7 @@ Header
   background: var(--darkGrey);
   color: var(--mainWhite);
 }
-.fa-search,
-.fa-paperclip {
+.single-icon i {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -555,7 +555,7 @@ Header
   padding-top: 1rem;
 }
 .fa-heart {
-  padding-right: 2rem;
+  padding-right: 1.3rem;
 }
 .btn {
   margin-top: 2rem;
@@ -609,4 +609,115 @@ Header
   }
 }
 
-/********** End Portfolio section************* */
+/********** Team members section************* */
+.team-member {
+  margin-top: 1rem;
+  padding: 1.5rem 3rem;
+  position: relative;
+}
+.team-style {
+  display: flex;
+  justify-content: center;
+}
+
+.all-members {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  padding: 2rem 0;
+  grid-gap: 1.5rem;
+}
+.single-member {
+  padding-bottom: 0.8rem;
+  border: 1px solid var(--lightGrey);
+  text-align: center;
+}
+
+.img-box {
+  position: relative;
+  background: var(--primaryColor);
+  text-align: center;
+}
+.single-member:hover .work {
+  opacity: 0;
+  transition: var(--mainTransition);
+}
+.single-member:hover .team-icons {
+  opacity: 1;
+}
+.team-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  opacity: 0;
+  transform: translate(-50%, -50%);
+  transition: var(--mainTransition);
+  width: 100%;
+  height: 100%;
+  color: var(--mainWhite);
+}
+.team-btn {
+  background: var(--primaryColor);
+  display: inline-block;
+  text-transform: uppercase;
+  color: var(--mainWhite);
+  font-weight: bold;
+  /* outline: 0.2rem solid var(--primaryColor);
+  outline-offset: 4px; */
+  cursor: pointer;
+  transition: var(--mainTransition);
+  padding: 1.2rem 1.5rem;
+  /* margin-top: -1.5rem; */
+  /* z-index: 10; */
+  transform: translateY(-50%);
+  border-radius: 5px;
+}
+.single-member:hover .team-btn {
+  background: var(--darkGrey);
+}
+.team-title {
+  margin-top: -1rem;
+  text-transform: capitalize;
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+.mail {
+  padding-bottom: 0.7rem;
+}
+.mail i,
+.number i {
+  padding-right: 0.8rem;
+}
+.single-member:hover .e-mail {
+  color: var(--primaryColor);
+  transition: var(--mainTransition);
+}
+/*
+@media screen and (min-width: 1200px) {
+  .team-style::before {
+    content: " ";
+    display: block;
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    left: 11%;
+    top: 27%;
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+  }
+  .team-style::after {
+    content: " ";
+    display: block;
+    width: 300px;
+    height: 2px;
+    position: absolute;
+    right: 11%;
+    top: 27%;
+    border-top: 1px solid var(--lightGrey);
+    border-bottom: 1px solid var(--lightGrey);
+  }
+} */
+
+/********** End Team members section************* */
