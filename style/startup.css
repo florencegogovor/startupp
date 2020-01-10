@@ -589,6 +589,7 @@ Header
   width: 100%;
   height: 100%;
   color: var(--mainWhite);
+  cursor: pointer;
 }
 
 .single-work:hover .work-info {
@@ -662,6 +663,7 @@ Header
   border: none;
   transition: var(--mainTransition);
   letter-spacing: 0.1rem;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -718,6 +720,7 @@ Header
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   padding: 2rem 0;
   grid-gap: 1.5rem;
+
 }
 
 .single-member {
@@ -725,6 +728,7 @@ Header
   border: 1px solid var(--lightGrey);
   text-align: center;
   transition: var(--mainTransition);
+  cursor: pointer;
 }
 
 .img-box {
@@ -772,6 +776,7 @@ Header
   /* z-index: 10; */
   transform: translateY(-50%);
   border-radius: 5px;
+  cursor: pointer;
 }
 
 .single-member:hover .team-btn {
@@ -878,6 +883,8 @@ textarea,
   background: var(--primaryColor);
   color: var(--mainWhite);
   transition: var(--mainTransition);
+  border: none;
+  cursor: pointer;
 }
 
 .submit-btn:hover {
