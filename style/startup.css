@@ -849,7 +849,7 @@ Header
   position: absolute;
   top: 20%;
   left: 15%;
-  background: var(--mainWhite);
+  background: var(--lightGrey);
   padding: 1.5rem;
   -webkit-box-shadow: -7px 1px 29px -7px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: -7px 1px 29px -7px rgba(0, 0, 0, 0.76);
@@ -865,8 +865,9 @@ Header
 input,
 textarea,
 .submit-btn {
-  padding: 0.5rem;
+  padding: .8rem;
   border-radius: 5px;
+  border: none;
 }
 
 ::placeholder {
@@ -885,6 +886,8 @@ textarea,
   transition: var(--mainTransition);
   border: none;
   cursor: pointer;
+  border-radius: 5px;
+
 }
 
 .submit-btn:hover {
