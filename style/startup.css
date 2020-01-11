@@ -847,7 +847,7 @@ Header
 .submit-form {
   max-width: 1170px;
   position: absolute;
-  top: 20%;
+  top: 10%;
   left: 15%;
   background: var(--lightGrey);
   padding: 1.5rem;
@@ -892,6 +892,45 @@ textarea,
 
 .submit-btn:hover {
   background: var(--darkGrey);
+}
+
+/* ************* Copyright *************** */
+.copyright {
+  margin-top: -1rem;
+  background: var(--darkGrey);
+  color: var(--mainWhite);
+  position: relative;
+  padding: 2rem 0;
+}
+
+.copyright-section-icon {
+  position: absolute;
+  top: -23%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 40px;
+  background: var(--primaryColor);
+  z-index: 2;
+  transform: rotateZ(-45deg);
+}
+
+.copyright-section-icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.copy-text {
+  text-align: center;
+  font-weight: bold;
+}
+
+@media screen and (max-width:400px) {
+  .footer {
+    padding-bottom: 3rem;
+  }
 }
 
 /********** End footer section************* */
