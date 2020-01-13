@@ -839,6 +839,34 @@ Header
   width: 100%;
   background: var(--darkGrey);
   color: white;
+  padding-bottom: 4rem;
+  padding-top: 1rem;
+}
+
+.icons-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.list-icon {
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--lightGrey);
+  margin-right: .8rem;
+  border-radius: 3px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--mainTransition);
+
+
+}
+
+.list-icon:hover {
+  background: var(--primaryColor);
 }
 
 /********** End icons section************* */
