@@ -848,6 +848,12 @@ Header
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  overflow: hidden;
+
+}
+
+.icons-list:first-child {
+  transform: translateY(150px);
 
 }
 
@@ -860,13 +866,13 @@ Header
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: var(--mainTransition);
-
-
+  transition: all 2s;
+  /* transform: translateY(150px); */
 }
 
 .list-icon:hover {
   background: var(--primaryColor);
+  transform: translateY(0px);
 }
 
 /********** End icons section************* */
