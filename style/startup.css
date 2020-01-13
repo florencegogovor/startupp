@@ -927,9 +927,19 @@ textarea,
   font-weight: bold;
 }
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:500px) {
+  .copyright-section-icon {
+    display: none;
+  }
+
   .footer {
-    padding-bottom: 3rem;
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and (max-width:750px) {
+  .copyright-section-icon {
+    display: none;
   }
 }
 
