@@ -571,6 +571,8 @@ Header
   position: relative;
   background: var(--primaryColor);
   text-align: center;
+  overflow: hidden;
+  /* transition: var(--mainTransition); */
 }
 
 .single-work:hover .work {
@@ -605,7 +607,7 @@ Header
 .single-icon {
   width: 35px;
   height: 35px;
-  transform: rotateZ(-45deg);
+  transform: rotate(-45deg);
   position: relative;
   border-radius: 3px;
   background: var(--mainWhite);
