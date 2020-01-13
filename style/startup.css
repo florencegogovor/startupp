@@ -834,6 +834,17 @@ Header
 
 /********** End Team members section************* */
 
+/**********icons section************* */
+.icons-section {
+  width: 100%;
+  background: var(--darkGrey);
+  color: white;
+}
+
+/********** End icons section************* */
+
+
+
 /********** footer section************* */
 .footer {
   width: 100%;
