@@ -841,27 +841,28 @@ Header
   color: white;
   padding-bottom: 4rem;
   padding-top: 1rem;
+  overflow: hidden;
+  transition: all 2s;
+
 }
 
 .icons-list {
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
-
 }
 
-.icons-list:first-child {
+/* .icons-list:first-child {
   transform: translateY(150px);
 
-}
+} */
 
 .list-icon {
   width: 40px;
   height: 40px;
   border: 1px solid var(--lightGrey);
   margin-right: .8rem;
+  margin-bottom: .8rem;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -872,8 +873,12 @@ Header
 
 .list-icon:hover {
   background: var(--primaryColor);
-  transform: translateY(0px);
+
 }
+
+/* .icons-section:hover {
+  transform: translateY(0px);
+} */
 
 /********** End icons section************* */
 
