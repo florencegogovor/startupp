@@ -864,6 +864,7 @@ Header
   justify-content: center;
   align-items: center;
   transition: all 2s;
+  padding: 10px;
 }
 
 .list-icon:hover {
@@ -888,7 +889,6 @@ Header
 .map iframe {
   width: 100%;
   height: 50vh;
-
 }
 
 .submit-form {
@@ -982,12 +982,23 @@ textarea,
   .footer {
     margin-bottom: 2rem;
   }
+
+  .map iframe {
+    display: none;
+  }
+
+  .submit-form {
+    top: 0;
+    left: 0;
+  }
 }
 
 @media screen and (max-width:750px) {
   .copyright-section-icon {
     display: none;
   }
+
+
 }
 
 /********** End footer section************* */
