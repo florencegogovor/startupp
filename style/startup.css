@@ -857,14 +857,13 @@ Header
   width: 40px;
   height: 40px;
   border: 1px solid var(--lightGrey);
-  margin-right: .8rem;
-  margin-bottom: .8rem;
+  margin-right: 16px;
+  margin-bottom: 16px;
   border-radius: 3px;
-  /* display: flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   transition: all 2s;
-  transform: translateY(150px); */
 }
 
 .list-icon:hover {
