@@ -853,6 +853,7 @@ Header
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 .list-icon {
@@ -874,9 +875,6 @@ Header
 
 }
 
-/* .icons-section:hover {
-  transform: translateY(0px);
-} */
 
 /********** End icons section************* */
 
@@ -903,6 +901,7 @@ Header
   -webkit-box-shadow: -7px 1px 29px -7px rgba(0, 0, 0, 0.76);
   -moz-box-shadow: -7px 1px 29px -7px rgba(0, 0, 0, 0.76);
   box-shadow: -7px 1px 29px -7px rgba(0, 0, 0, 0.76);
+  margin-bottom: 1rem;
 }
 
 .form {
