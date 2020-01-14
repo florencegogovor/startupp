@@ -565,6 +565,8 @@ Header
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
   padding: 2rem 0;
+  justify-content: center;
+  align-items: center;
 }
 
 .single-work {
@@ -851,11 +853,6 @@ Header
   justify-content: center;
   align-items: center;
 }
-
-/* .icons-list:first-child {
-  transform: translateY(150px);
-
-} */
 
 .list-icon {
   width: 40px;
