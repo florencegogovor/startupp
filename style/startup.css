@@ -884,7 +884,6 @@ Header
 .footer {
   width: 100%;
   position: relative;
-  text-align: center;
 }
 
 .map iframe {
@@ -976,26 +975,8 @@ textarea,
 }
 
 @media screen and (max-width:500px) {
-  .copyright-section-icon {
-    display: none;
-  }
-
-  .footer {
-    margin-bottom: 2rem;
-  }
-
   .map iframe {
-    display: none;
-  }
-
-  .submit-form {
-    top: 0;
-    left: 0;
-
-  }
-
-  .copyright {
-    margin-top: 0;
+    opacity: 0;
   }
 }
 
@@ -1004,7 +985,12 @@ textarea,
     display: none;
   }
 
-
+  .footer {
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 /********** End footer section************* */
