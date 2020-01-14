@@ -890,7 +890,7 @@ Header
 
 .map iframe {
   width: 100%;
-  height: 50vh;
+  min-height: 50vh;
 }
 
 .submit-form {
