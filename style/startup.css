@@ -60,85 +60,6 @@ ul {
 /************************
 Header
 ************************/
-/* **********Main Header************* */
-
-.main-header {
-  background: linear-gradient(rgba(93, 113, 158, 0.5), rgba(20, 31, 88, 0.7)),
-    url("../imagesStartup/header-bcg.jpg") center/cover no-repeat fixed;
-  height: 60vh;
-  position: relative;
-}
-
-.header-center {
-  text-align: center;
-  padding: 2rem;
-  width: 100%;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.header-center p {
-  text-transform: uppercase;
-  font-size: 0.7rem;
-  margin-bottom: -0.2rem;
-}
-
-.header-info {
-  padding-bottom: 0.7rem;
-  font-size: 2.1rem;
-  letter-spacing: var(--mainSpacing);
-}
-
-.header-text {
-  font-size: 0.8rem;
-  color: var(--mainWhite);
-  background: var(--secondaryColor);
-  padding: 0.3rem 0.6rem;
-  line-height: 1.3rem;
-  letter-spacing: var(--mainSpacing);
-}
-
-.first-letter {
-  color: var(--primaryColor);
-  font-size: 0.7rem;
-}
-
-.end-name {
-  font-size: 0.7rem;
-  text-transform: initial;
-}
-
-.header-title {
-  display: flex;
-  justify-content: center;
-}
-
-.title {
-  padding: 0.6rem 0.4rem;
-  letter-spacing: var(--mainSpacing);
-}
-
-.right,
-.left {
-  color: var(--primaryColor);
-  font-size: 1rem;
-  padding: 1rem 0.6rem;
-}
-
-.green {
-  color: var(--primaryColor);
-}
-
-.down {
-  color: var(--primaryColor);
-  font-size: 1.4rem;
-  margin-top: 2rem;
-}
-
-/* ********** End Main Header************* */
 /* ********** Navbar************* */
 .navbar {
   /* padding: 1rem; */
@@ -253,6 +174,87 @@ Header
 }
 
 /* ********** End Navbar************* */
+/* **********Main Header************* */
+
+.main-header {
+  background: linear-gradient(rgba(93, 113, 158, 0.6), rgba(20, 31, 88, 0.8)),
+    url("../imagesStartup/header-bcg.jpg") center/cover no-repeat fixed;
+  height: 60vh;
+  position: relative;
+}
+
+.header-center {
+  text-align: center;
+  padding: 2rem;
+  width: 100%;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.header-center p {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  margin-bottom: -0.2rem;
+  color: white;
+}
+
+.header-info {
+  padding-bottom: 0.7rem;
+  font-size: 2.1rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+.header-text {
+  font-size: 0.8rem;
+  color: var(--mainWhite);
+  background: var(--secondaryColor);
+  padding: 0.3rem 0.6rem;
+  line-height: 1.3rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+.first-letter {
+  color: var(--primaryColor);
+  font-size: 0.7rem;
+}
+
+.end-name {
+  font-size: 0.7rem;
+  text-transform: initial;
+}
+
+.header-title {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  padding: 0.6rem 0.4rem;
+  letter-spacing: var(--mainSpacing);
+}
+
+.right,
+.left {
+  color: var(--primaryColor);
+  font-size: 1rem;
+  padding: 1rem 0.6rem;
+}
+
+.green {
+  color: var(--primaryColor);
+}
+
+.down {
+  color: var(--primaryColor);
+  font-size: 1.4rem;
+  margin-top: 2rem;
+}
+
+/* ********** End Main Header************* */
+
 /* **********End  Header************* */
 
 /* **********Services section************* */
@@ -974,15 +976,13 @@ textarea,
   font-weight: bold;
 }
 
-@media screen and (max-width:500px) {
-  .map iframe {
-    opacity: 0;
-  }
-}
-
 @media screen and (max-width:750px) {
   .copyright-section-icon {
     display: none;
+  }
+
+  .map iframe {
+    opacity: 0;
   }
 
   .footer {
@@ -990,6 +990,12 @@ textarea,
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+
+  .submit-form {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 }
 
