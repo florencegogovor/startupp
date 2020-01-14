@@ -884,6 +884,7 @@ Header
 .footer {
   width: 100%;
   position: relative;
+  text-align: center;
 }
 
 .map iframe {
@@ -990,6 +991,11 @@ textarea,
   .submit-form {
     top: 0;
     left: 0;
+
+  }
+
+  .copyright {
+    margin-top: 0;
   }
 }
 
