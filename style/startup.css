@@ -63,55 +63,95 @@ Header
 ************************/
 /* ********** Navbar************* */
 
-/* .navbar {
+.header {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.navbar {
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* height: 11vh; */
 
-} */
+}
 
-/* .logo-box {
-  padding: 1.5rem;
-} */
-
-/* .logo {
+.logo {
   width: 50px;
   height: 70px;
   border-radius: 50%;
-  /* border: 1px solid var(--primaryColor); */
-/* margin: 0 auto;
-  padding: 0.2rem;
   display: block;
-} */
-
-/* .white {
-  color: var(--mainWhite);
 }
 
 .nav-links {
   display: flex;
-  flex-wrap: wrap;
-  height: 0;
+}
 
-} */
-
-/* .link {
-  padding: 0.5rem 0.9rem;
-  transition: var(--mainTransition);
-  text-transform: capitalize;
+.link {
   display: block;
+  padding: 1rem;
 }
 
 .link:hover {
-  background: var(--primaryColor);
-  color: var(--mainWhite);
+  color: white;
+  background: #555;
+  color: white;
+  border-radius: 10px;
+}
+
+.nav-links li {
+  transition: var(--mainTransition);
+}
+
+.toggle-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 40px;
+  height: 30px;
   border-radius: 5px;
 }
 
-.toggle-collapse {
-  display: none;
-}  */
+.toggle-button .bar {
+  height: 4px;
+  width: 100%;
+  background: white;
+  border-radius: 2px;
+}
+
+@media screen and (max-width:700px) {
+  .toggle-button {
+    display: flex;
+  }
+
+  .nav-links {
+    /* display: none; */
+  }
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .header-row {
+    display: none;
+  }
+}
+
+
+/* .nav-links li:hover {
+  background: #555;
+} */
+
 
 
 /* **********Media query************* */
@@ -155,33 +195,7 @@ Header
     margin: 0 auto;
   }
 
-  /* ****** Navbar******* */
-  /* .navbar {
-    display: flex;
-    justify-content: space-between;
-  }
 
-  .nav-links {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-  }
-
-  .navbar {
-    width: 100%;
-    max-width: 1170px;
-    margin: 0 auto;
-  } */
-
-  /* .logo-box,
-  .search {
-    padding: 0;
-  }
-
-  .logo-box,
-  .search {
-    margin: 2rem;
-  } */
 
 }
 
@@ -856,9 +870,18 @@ Header
   width: 100%;
   background: var(--darkGrey);
   color: white;
-  padding-bottom: 4rem;
+  padding-bottom: 3rem;
   padding-top: 1rem;
   transition: all 2s;
+
+
+}
+
+.center-logo {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 2rem;
+  padding-top: .9rem;
 
 }
 
