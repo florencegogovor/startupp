@@ -73,7 +73,7 @@ Header
   padding: 1rem;
   display: flex;
   justify-content: space-between;
-  /* height: 11vh; */
+  height: 11vh;
 
 }
 
@@ -93,7 +93,7 @@ Header
   padding: 1rem;
 }
 
-.link:hover {
+.nav-links li:hover {
   color: white;
   background: #555;
   color: white;
@@ -129,7 +129,12 @@ Header
   }
 
   .nav-links {
-    /* display: none; */
+    display: none;
+    width: 100%;
+  }
+
+  .nav-links li {
+    text-align: center;
   }
 
   .navbar {
@@ -140,6 +145,14 @@ Header
   .nav-links {
     flex-direction: column;
     width: 100%;
+  }
+
+  /* .link {
+    padding: .5rem;
+  } */
+
+  .nav-links.active {
+    display: flex;
   }
 
   .header-row {
