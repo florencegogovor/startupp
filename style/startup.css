@@ -903,6 +903,17 @@ Header
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  animation: transform 2s ease;
+}
+
+@keyframes iconBox {
+  0% {
+    transform: translate(15px);
+  }
+
+  100% {
+    transform: rotateY(0px);
+  }
 }
 
 .list-icon {
@@ -915,23 +926,28 @@ Header
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: all 2s;
+  transition: all 1;
   padding: 10px;
-  /* animation: listIcon 1s ease-in; */
+
+}
+
+.list-icon:hover i {
+  animation: listIcon 0.2s ease-in;
 }
 
 .list-icon:hover {
   background: var(--primaryColor);
+  /* animation: listIcon 0.3s ease-in; */
 
 }
 
 @keyframes listIcon {
   0% {
-    transform: translateY(0deg);
+    transform: rotateY(0deg);
   }
 
   100% {
-    transform: translateY(100deg);
+    transform: rotateY(100deg);
   }
 }
 
