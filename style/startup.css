@@ -917,6 +917,7 @@ Header
   align-items: center;
   transition: all 2s;
   padding: 10px;
+  /* animation: listIcon 1s ease-in; */
 }
 
 .list-icon:hover {
@@ -924,6 +925,15 @@ Header
 
 }
 
+@keyframes listIcon {
+  0% {
+    transform: translateY(0deg);
+  }
+
+  100% {
+    transform: translateY(100deg);
+  }
+}
 
 /********** End icons section************* */
 
