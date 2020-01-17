@@ -916,6 +916,14 @@ Header
   }
 }
 
+.icons-list:first-child {
+  animation-delay: 1s;
+}
+
+/* .icons-list:first-child(n+1) {
+  animation-delay: 1s;
+} */
+
 .list-icon {
   width: 40px;
   height: 40px;
@@ -928,11 +936,22 @@ Header
   align-items: center;
   transition: all 1;
   padding: 10px;
+  animation: animateIcon 1s ease-out;
 
 }
 
+@keyframes animateIcon {
+  0% {
+    transform: translateY(60px);
+  }
+
+  100% {
+    transform: translateY(0px);
+  }
+}
+
 .list-icon:hover i {
-  animation: listIcon 0.2s ease-in;
+  animation: listIcon 0.3s ease-in;
 }
 
 .list-icon:hover {
