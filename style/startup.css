@@ -808,17 +808,19 @@ Header
 
 .img-box {
   position: relative;
-  background: var(--primaryColor);
+  /* background: var(--primaryColor); */
   text-align: center;
 }
 
 .single-member:hover .work {
   opacity: 0;
+  transform: scale(0) rotateY(180deg);
   /* transition: var(--mainTransition); */
 }
 
 .single-member:hover .team-icons {
   opacity: 1;
+  transform: scale(1);
 }
 
 .team-icons {
@@ -826,14 +828,16 @@ Header
   justify-content: center;
   align-items: center;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  top: 0%;
+  left: 0%;
   opacity: 0;
-  transform: translate(-50%, -50%);
+  /* transform: translate(-50%, -50%); */
   transition: var(--mainTransition);
   width: 100%;
   height: 100%;
   color: var(--mainWhite);
+  transform: scale(0);
+  background: var(--primaryColor);
 }
 
 .team-btn {
