@@ -158,7 +158,13 @@ Header
   .header-row {
     display: none;
   }
+
+  .header {
+    height: 100vh;
+  }
 }
+
+
 
 
 /* .nav-links li:hover {
@@ -219,7 +225,6 @@ Header
 .main-header {
   background: linear-gradient(rgba(93, 113, 158, 0.6), rgba(20, 31, 88, 0.8)),
     url("../imagesStartup/header-bcg.jpg") center/cover no-repeat fixed;
-  min-height: 100vh;
   height: 60vh;
   position: relative;
 }
