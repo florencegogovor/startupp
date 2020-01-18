@@ -613,57 +613,51 @@ Header
 
 .single-work {
   position: relative;
-  background: var(--primaryColor);
+  /* background: var(--primaryColor); */
   text-align: center;
-  overflow: hidden;
-  /* transition: var(--mainTransition); */
-  /* animation: appear 1s ease-in; */
+  /* overflow: hidden; */
+
+
+}
+
+.work {
+  transition: var(--mainTransition);
+  /* position: absolute; */
+  /* top: 0;
+left: 0; */
+  transform: perspective(600px) rotateY(0deg);
+  /* width: 100%;
+width: 100%; */
+  backface-visibility: hidden;
 }
 
 .single-work:hover .work {
-  opacity: 0;
-  transition: var(--mainTransition);
-  animation: disappear 2s ease-in;
+  /* opacity: 0; */
+  transform: perspective(600px) rotateY(-180deg);
 }
 
 .work-info {
   position: absolute;
-  top: 50%;
-  left: 50%;
-  opacity: 0;
-  transform: translate(-50%, -50%);
+  top: 0;
+  left: 0;
+  /* opacity: 0; */
+  /* transform: translate(-50%, -50%); */
   transition: var(--mainTransition);
   padding: 4rem 1rem 0 1rem;
   width: 100%;
   height: 100%;
   color: var(--mainWhite);
   cursor: pointer;
+  transform: perspective(600px) rotateY(180deg);
+  backface-visibility: hidden;
+  background: var(--primaryColor);
 
 }
 
 .single-work:hover .work-info {
-  opacity: 1;
+  /* opacity: 1; */
+  transform: perspective(600px) rotateY(0deg);
 
-}
-
-@keyframes disappear {
-  0% {
-    transform: rotateY(0deg);
-  }
-
-  100% {
-    transform: rotateY(90deg);
-  }
-}
-
-@keyframes appear {
-  0% {
-    transform: rotateY(90deg);
-  }
-
-  100% {
-    transform: rotateY(0deg);
-  }
 }
 
 .work-icons {
