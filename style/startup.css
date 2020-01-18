@@ -624,12 +624,12 @@ Header
 
 .work {
   transition: var(--mainTransition);
-  /* position: absolute; */
-  /* top: 0;
-left: 0; */
+  /* position: absolute;
+  top: 0;
+  left: 0; */
   transform: perspective(600px) rotateY(0deg);
   /* width: 100%;
-width: 100%; */
+  width: 100%; */
   backface-visibility: hidden;
 }
 
