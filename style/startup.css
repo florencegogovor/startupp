@@ -151,6 +151,10 @@ Header
     width: 100%;
   }
 
+  .link {
+    padding-bottom: .5rem;
+  }
+
   /* .link {
     padding: .5rem;
   } */
