@@ -128,6 +128,10 @@ Header
     display: flex;
   }
 
+  .main-header {
+    height: 100%;
+  }
+
   .nav-links {
     display: none;
     width: 100%;
@@ -159,13 +163,8 @@ Header
     display: none;
   }
 
-  .header {
-    height: 100vh;
-  }
+
 }
-
-
-
 
 /* .nav-links li:hover {
   background: #555;
