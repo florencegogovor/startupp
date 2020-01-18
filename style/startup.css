@@ -609,6 +609,7 @@ Header
   padding: 2rem 0;
   justify-content: center;
   align-items: center;
+  grid-gap: 1rem;
 }
 
 .single-work {
@@ -616,6 +617,7 @@ Header
   /* background: var(--primaryColor); */
   text-align: center;
   /* overflow: hidden; */
+  border-radius: 10px;
 
 
 }
