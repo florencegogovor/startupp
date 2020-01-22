@@ -429,7 +429,7 @@ Header
 /* ********** End Services section************* */
 /* ********** features section************* */
 .features {
-  margin-top: 1rem;
+  /* margin-top: 1rem; */
   padding: 1.5rem 3rem;
   background: var(--darkGrey);
   color: var(--mainWhite);
@@ -438,14 +438,14 @@ Header
 
 .feature-section-icon {
   position: absolute;
-  top: -3.4%;
+  top: -3.2%;
   left: 50%;
-  transform: translateX(-50%);
+  transform: translate(-50%, -50%);
   width: 40px;
   height: 40px;
   background: var(--primaryColor);
   z-index: 2;
-  transform: rotateZ(-45deg);
+   transform: rotateZ(-45deg); 
 }
 
 .feature-section-icon i {
@@ -453,6 +453,9 @@ Header
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
 }
 
 .section-white {
