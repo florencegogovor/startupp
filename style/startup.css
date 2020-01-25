@@ -67,72 +67,63 @@ Header
 
  .logo {
   width: 50px;
-  height: 70px;
+  height: 60px;
   border-radius: 50%;
   display: block;
 } 
 .navbar{
   display: flex;
   justify-content: space-between;
-  /* align-items: center; */
+  padding: 1rem 2rem;
 }
-.btn {
-  border: 5px solid var(--primaryColor);
+.nav-btn {
+  border: 4px solid var(--primaryColor);
   align-self: center;
 }
 .bar1,.bar2,.bar3{
-  width: 50px;
-  height: 5px;
+  width: 40px;
+  height: 4px;
   border-radius: 2px;
   margin: .5rem;
   background: var(--primaryColor);
 }
+.link{
+  display: block;
+  padding: 0.8rem 2rem;
+  text-transform: uppercase;
+  transition: var(--mainTransition);
+}
+.link:hover{
+  padding-left: 5rem;
+  background: grey;
+  color: white;
+}
+.nav-links{
+  height: 0;
+  overflow: hidden;
+  transition: var(--mainTransition);
+}
+.show{
+  height: 355px;
+}
 
-/* **********Media query************* */
-@media screen and (min-width: 768px) {
-  .header-row {
-    width: 30rem;
-    position: relative;
+@media screen and (min-width:900px){
+  .nav-btn{
+    display: none;
   }
-
-  .header-info {
-    letter-spacing: 0.5rem;
-  }
-
-  .header-title::before {
-    content: " ";
-    display: block;
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    left: 0;
-    top: 58%;
-    border-top: 1px solid var(--mainWhite);
-    border-bottom: 1px solid var(--mainWhite);
-  }
-
-  .header-title::after {
-    content: " ";
-    display: block;
-    width: 80px;
-    height: 2px;
-    position: absolute;
-    right: 0;
-    top: 58%;
-    border-top: 1px solid var(--mainWhite);
-    border-bottom: 1px solid var(--mainWhite);
-  }
-
-  .header-center {
+  .nav-center{
+    display: flex;
+    justify-content: space-between;
     width: 100%;
     max-width: 1170px;
     margin: 0 auto;
+    align-items: center;
   }
-
-
-
+  .nav-links{
+    display: flex;
+    height: auto;
+  }
 }
-
 
 /* ********** End Navbar************* */
 /* **********Main Header************* */
@@ -213,6 +204,48 @@ Header
   font-size: 1.4rem;
   margin-top: 2rem;
 }
+/* **********Media query************* */
+@media screen and (min-width: 768px) {
+  .header-row {
+    width: 30rem;
+    position: relative;
+  }
+
+  .header-info {
+    letter-spacing: 0.5rem;
+  }
+
+  .header-title::before {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    top: 58%;
+    border-top: 1px solid var(--mainWhite);
+    border-bottom: 1px solid var(--mainWhite);
+  }
+
+  .header-title::after {
+    content: " ";
+    display: block;
+    width: 80px;
+    height: 2px;
+    position: absolute;
+    right: 0;
+    top: 58%;
+    border-top: 1px solid var(--mainWhite);
+    border-bottom: 1px solid var(--mainWhite);
+  }
+
+  .header-center {
+    width: 100%;
+    max-width: 1170px;
+    margin: 0 auto;
+  }
+}
+
 
 /* ********** End Main Header************* */
 
