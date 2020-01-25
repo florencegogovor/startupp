@@ -46,10 +46,21 @@ scrollLinks.forEach(link =>{
         navLinks.classList.remove("show");
         btn.classList.remove("change");
         const id = e.target.getAttribute("href").slice(1);
-        const elment = document.getElementById(id);
+        const element = document.getElementById(id);
+
  let  position;
  if(navbar.classList.contains("fixed")){
      position = element.offsetTop - 92;
+ }else{
+    position = element.offsetTop - 200;
+ }
+ if (window.innerWidth < 992){
+    if(navbar.classList.contains("fixed")){
+        position = element.offsetTop - 92;
+    }else
+    {
+        position = element.offsetTop - 92 - 447;
+    } 
  }
         // window scrollTo
         window.scrollTo({
