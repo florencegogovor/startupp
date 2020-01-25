@@ -47,10 +47,13 @@ scrollLinks.forEach(link =>{
         btn.classList.remove("change");
         const id = e.target.getAttribute("href").slice(1);
         const elment = document.getElementById(id);
-
+ let  position;
+ if(navbar.classList.contains("fixed")){
+     position = element.offsetTop - 92;
+ }
         // window scrollTo
         window.scrollTo({
-            left:0;
+            left:position,
             top:element.offsetTop,
             behavior:"smooth"
 
