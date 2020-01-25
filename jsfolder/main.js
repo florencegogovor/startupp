@@ -15,7 +15,9 @@ btn.addEventListener("click",function(){
     let value = navLinks.classList.contains("show");
     if(value){
         navLinks.classList.remove("show");
+        btn.classList.remove("change");
     }else{
         navLinks.classList.add("show");
+        btn.classList.add("change");
     }
 });

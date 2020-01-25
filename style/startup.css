@@ -81,7 +81,7 @@ Header
   align-self: center;
 }
 .bar1,.bar2,.bar3{
-  width: 40px;
+  width: 30px;
   height: 4px;
   border-radius: 2px;
   margin: .5rem;
@@ -106,7 +106,15 @@ Header
 .show{
   height: 355px;
 }
-
+.change .bar1{
+  transform: rotate(-45deg) translate(-10px,9px);
+}
+.change .bar2{
+ opacity: 0;
+}
+.change .bar3{
+  transform: rotate(45deg) translate(-8px,-7px);;
+}
 @media screen and (min-width:900px){
   .nav-btn{
     display: none;
@@ -141,6 +149,8 @@ Header
     padding: 1rem;
   }
 }
+
+
 
 /* ********** End Navbar************* */
 /* **********Main Header************* */
