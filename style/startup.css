@@ -123,6 +123,15 @@ Header
     display: flex;
     height: auto;
   }
+  .link{
+    padding: 0;
+    margin-left: 2rem;
+  }
+  .link:hover{
+    padding: 0;
+    background: transparent;
+    color: var(--primaryColor);
+  }
 }
 
 /* ********** End Navbar************* */
