@@ -43,7 +43,7 @@ h1 {
   font-size: 2rem;
 }
 
-img {
+img:not("logo") {
   width: 100%;
   display: block;
 }
@@ -63,7 +63,7 @@ Header
 ************************/
 /* ********** Navbar************* */
 
-.header {
+/* .header {
   width: 100%;
   margin: 0 auto;
   max-width: 1170px;
@@ -75,16 +75,16 @@ Header
   justify-content: space-between;
   height: 11vh;
 
-}
+}*/
 
-.logo {
+ .logo {
   width: 50px;
   height: 70px;
   border-radius: 50%;
   display: block;
-}
+} 
 
-.nav-links {
+/*.nav-links {
   display: flex;
 }
 
@@ -130,9 +130,9 @@ Header
 
   .main-header {
     height: 100%;
-  }
+  } */
 
-  .nav-links {
+  /* .nav-links {
     display: none;
     width: 100%;
   }
@@ -153,12 +153,12 @@ Header
 
   .link {
     padding-bottom: .5rem;
-  }
+  } */
 
   /* .link {
     padding: .5rem;
   } */
-
+/* 
   .nav-links.active {
     display: flex;
   }
@@ -168,7 +168,7 @@ Header
   }
 
 
-}
+} */
 
 /* .nav-links li:hover {
   background: #555;
