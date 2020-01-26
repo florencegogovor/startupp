@@ -288,7 +288,6 @@ Header
   }
 }
 
-
 /* ********** End Main Header************* */
 
 /* **********End  Header************* */
@@ -313,9 +312,6 @@ Header
   padding-bottom: 1rem;
 }
 
-/* .all-services {
-  padding: 0.5rem;
-} */
 .single-service {
   padding: 1rem 0;
 }
@@ -368,7 +364,7 @@ Header
   border: none;
 }
 
-/* media query */
+/****************** services media query *******************/
 @media screen and (min-width: 768px) {
   .section-center {
     max-width: 1170px;
@@ -440,9 +436,6 @@ Header
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* display: flex;
-  justify-content: center;
-  align-items: center; */
 }
 
 .section-white {
