@@ -36,7 +36,6 @@ window.addEventListener("scroll",() =>{
  }
 });
 
-
 // ***********************scrollLinks*******************
 const scrollLinks = document.querySelectorAll(".scroll-link");
 
@@ -62,6 +61,7 @@ scrollLinks.forEach(link =>{
         position = element.offsetTop - 92 - 447;
     } 
  }
+ 
         // window scrollTo
         window.scrollTo({
             left:position,
