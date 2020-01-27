@@ -87,6 +87,7 @@ Header
   border-radius: 2px;
   margin: .5rem;
   background: var(--primaryColor);
+  transition: all 1s;
 }
 .link{
   display: block;
@@ -208,6 +209,7 @@ Header
   padding: 0.3rem 0.6rem;
   line-height: 1.3rem;
   letter-spacing: var(--mainSpacing);
+ 
 }
 
 .first-letter {
