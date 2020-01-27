@@ -44,7 +44,7 @@ h1 {
   font-size: 2rem;
 }
 
-img:not("logo") {
+img {
   width: 100%;
   display: block;
 }
