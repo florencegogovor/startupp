@@ -3,6 +3,15 @@
 const copyDate = document.querySelector("#date");
 const date = new Date();
 copyDate.innerHTML = date.getFullYear();
+const primBtn= document.querySelectorAll('.prim-btn');
+
+primBtn.forEach(function(button){
+    button.addEventListener("click",function(e){
+        e.preventDefault();
+
+    });
+
+});
 
 //navbar reponsible setup
 const btn = document.querySelector(".nav-btn");
