@@ -70,8 +70,7 @@ Header
 
  .logo {
   width: 50px;
-  height: 60px;
-  border-radius: 50%;
+  height: 50px;
   display: block;
 } 
 .navbar{
